@@ -36,9 +36,9 @@
   .ttd{max-width:820px; margin:30px auto; display:flex; justify-content:space-between; font-size:13px;}
   .ttd div{width:45%; text-align:center;}
   .ttd .space{height:70px;}
-  .back-btn{position:fixed;top:24px;right:24px;z-index:999;display:flex;align-items:center;gap:.5rem;padding:.75rem 1.25rem;background:#1e3a5f;color:#fff;border:none;border-radius:50px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 4px 14px rgb(0 0 0 / .25);transition:background .2s,transform .2s}
+  .back-btn{position:fixed;top:24px;right:24px;z-index:999;display:flex;align-items:center;gap:.5rem;padding:.6rem;background:#1e3a5f;color:#fff;border:none;border-radius:50%;width:40px;height:40px;font-size:16px;text-decoration:none;box-shadow:0 4px 14px rgb(0 0 0 / .25);transition:background .2s,transform .2s}
   .back-btn:hover{background:#1e40af;transform:translateY(-2px)}
-  .top-btn{position:fixed;bottom:24px;right:180px;z-index:999;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:#94a3b8;color:#fff;border:none;border-radius:50%;font-size:18px;text-decoration:none;box-shadow:0 4px 14px rgb(0 0 0 / .25);transition:background .2s,transform .2s}
+  .top-btn{position:fixed;top:24px;right:76px;z-index:999;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#94a3b8;color:#fff;border:none;border-radius:50%;font-size:16px;text-decoration:none;box-shadow:0 4px 14px rgb(0 0 0 / .25);transition:background .2s,transform .2s}
   .top-btn:hover{background:#64748b;transform:translateY(-2px)}
 </style>
 </head>
@@ -173,7 +173,7 @@
   </div>
 </div>
 
-<a class="back-btn" href="index.html">&#8592; Kembali</a>
+<a class="back-btn" href="index.html" title="Kembali ke daftar">&#8592;</a>
 <a class="top-btn" href="#" title="Kembali ke atas">&#8593;</a>
 <script>document.querySelector('.top-btn').addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})})</script>
 </body>
