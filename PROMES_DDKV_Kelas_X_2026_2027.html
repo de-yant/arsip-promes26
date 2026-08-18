@@ -172,7 +172,11 @@
 </div>
 
 <a class="back-btn" href="index.html" title="Kembali ke daftar">&#8592;</a>
-<a class="top-btn" href="#" title="Kembali ke atas">&#8593;</a>
-<script>document.querySelector('.top-btn').addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})})</script>
+<a class="top-btn" href="#" title="Kembali ke atas" style="display:none">&#8593;</a>
+<script>
+var topBtn=document.querySelector('.top-btn');
+window.addEventListener('scroll',function(){topBtn.style.display=window.scrollY>300?'flex':'none'});
+topBtn.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+</script>
 </body>
 </html>
