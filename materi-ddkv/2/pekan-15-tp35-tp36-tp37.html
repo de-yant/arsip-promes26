@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <title>Rangkuman Materi DDKV — Pekan 15: Bitmap, Vektor, dan Mode Warna</title>
 <style>
-  body{font-family:Arial,Helvetica,sans-serif;max-width:860px;margin:20px auto;padding:0 16px;color:#1f2937;font-size:14px;line-height:1.6;}
+  body{font-family:Arial,Helvetica,sans-serif;max-width:860px;margin:20px auto;padding:0 16px;color:#1f2937;font-size:14px;line-height:1.7;}
   h1{font-size:18px;color:#1e3a5f;border-bottom:2px solid #1e3a5f;padding-bottom:6px;}
   h2{font-size:15px;color:#334155;margin-top:18px;}
   .meta{background:#f1f5f9;padding:10px 14px;border-radius:6px;margin-bottom:16px;font-size:13px;}
   .meta b{color:#1e3a5f;}
-  ul{margin:4px 0 12px 20px;}
-  li{margin-bottom:4px;}
+  p{margin:8px 0;text-align:justify;}
   .box{background:#fff7ed;border:1px solid #fdba74;border-radius:6px;padding:10px 14px;margin:12px 0;}
+  .box-biru{background:#eff6ff;border:1px solid #93c5fd;border-radius:6px;padding:10px 14px;margin:12px 0;}
   .sumber{font-size:12px;color:#64748b;margin-top:20px;border-top:1px solid #e2e8f0;padding-top:8px;}
 </style>
 </head>
@@ -25,35 +25,76 @@
   <b>Bab:</b> 3 Komputer Grafis
 </div>
 
-<h2>Gambar Bitmap (Raster)</h2>
-<ul>
-  <li>Terdiri dari kotak-kotak kecil bernama piksel</li>
-  <li>Resolusi menentukan kualitas: dpi (dots per inch)</li>
-  <li>Ukuran file besar, detail berkurang saat diperbesar</li>
-  <li>Format: JPG, PNG, BMP, TIFF, GIF</li>
-  <li>Cocok untuk: foto, shading kompleks, efek realistis</li>
-</ul>
+<h2>Gambar Bitmap atau Raster</h2>
+<p>Gambar bitmap atau raster adalah jenis gambar digital yang tersusun dari ribuan hingga
+jutaan piksel atau titik-titik kecil yang tersusun dalam format grid dua dimensi.
+Setiap piksel memiliki informasi warna dan posisi tersendiri sehingga secara keseluruhan
+membentuk sebuah gambar utuh. Resolusi bitmap diukur dalam dpi atau dots per inch yang
+menunjukkan berapa banyak piksel dalam satu inci. Semakin tinggi resolusi, semakin
+detail dan tajam gambar yang dihasilkan. Namun, kelemahan utama gambar bitmap adalah
+ukuran file yang cenderung besar terutama untuk gambar beresolusi tinggi. Selain itu,
+ketika gambar bitmap diperbesar melebihi resolusi aslinya, piksel-piksel individu akan
+mulai terlihat sehingga gambar terlihat pecah dan tidak tajam. Oleh karena itu, gambar
+bitmap harus diproduksi dengan resolusi yang sesuai dengan media output. Format file
+bitmap yang umum digunakan meliputi JPG untuk foto, PNG untuk transparansi, dan TIFF
+untuk kebutuhan cetak profesional beresolusi tinggi.</p>
 
 <h2>Gambar Vektor</h2>
-<ul>
-  <li>Terdiri dari garis, kurva, dan bentuk matematika (path)</li>
-  <li>Tidak pecah saat diperbesar (skalabel)</li>
-  <li>Ukuran file kecil</li>
-  <li>Format: AI, EPS, SVG, CDR</li>
-  <li>Cocok untuk: logo, ikon, ilustrasi, desain cetak</li>
-</ul>
+<p>Gambar vektor adalah jenis gambar digital yang dibuat menggunakan rumus matematika
+berupa path atau jalur yang terdiri dari titik, garis, dan kurva dengan koordinat dan
+parameter tertentu. Karena berbasis rumus matematika, gambar vektor dapat diubah
+ukurannya dari sangat kecil hingga sangat besar tanpa mengalami penurunan kualitas
+atau pecah sama sekali. Kelebihan utama gambar vektor ini menjadikannya pilihan utama
+untuk desain yang membutuhkan skalabilitas tinggi seperti logo, ikon, tipografi, dan
+ilustrasi grafis. Ukuran file vektor juga jauh lebih kecil dibandingkan bitmap dengan
+tingkat detail yang sama karena hanya menyimpan informasi matematika alih-alih data
+piksel individu. Format file vektor yang umum digunakan meliputi AI atau Adobe
+Illustrator Artwork, SVG atau Scalable Vector Graphics yang merupakan format terbuka
+berbasis XML, dan CDR atau CorelDRAW yang merupakan format proprietary. Kelemahan
+gambar vektor adalah keterbatasannya dalam menampilkan detail kompleks seperti tekstur
+foto atau efek gradasi halus yang lebih mudah dicapai dengan gambar bitmap.</p>
 
-<h2>Menentukan Penggunaan</h2>
-<ul>
-  <li>Vektor untuk logo/ikon, bitmap untuk foto/tekstur</li>
-</ul>
+<div class="box">
+<b>Perbandingan Bitmap vs Vektor:</b> Bitmap — berbasis piksel, file besar, detail
+tinggi, pecah saat diperbesar melebihi resolusi. Vektor — berbasis matematika, file
+kecil, skalabel sempurna, cocok untuk logo dan ikon.
+</div>
 
-<h2>Mode Warna</h2>
-<ul>
-  <li><b>RGB (Red-Green-Blue):</b> untuk media digital/layar, additive color mixing</li>
-  <li><b>CMYK (Cyan-Magenta-Yellow-Key/Black):</b> untuk cetak, subtractive color mixing</li>
-  <li>Sesuaikan mode warna dengan media output</li>
-</ul>
+<h2>Menentukan Penggunaan Bitmap vs Vektor</h2>
+<p>Pemilihan antara bitmap dan vektor harus disesuaikan dengan jenis pekerjaan dan
+kebutuhan output. Logo, ikon, dan elemen grafis sederhana yang membutuhkan skalabilitas
+tinggi sebaiknya dibuat dalam format vektor karena logo harus dapat digunakan dari ukuran
+sangat kecil pada kartu nama hingga ukuran sangat besar pada papan iklan billboard.
+Foto produk, tekstur alam, dan ilustrasi digital dengan detail kompleks sebaiknya
+menggunakan format bitmap karena kemampuannya menampilkan gradasi warna dan detail halus
+yang tidak mungkin dicapai dengan vektor. Dalam praktik profesional, sering kali kedua
+format ini digunakan bersamaan dalam satu proyek desain. Sebagai contoh, sebuah poster
+dapat memuat foto produk dalam format bitmap untuk menampilkan detail produk yang realistis,
+sementara logo merek dan elemen grafis pendukung dibuat dalam format vektor untuk menjaga
+ketajaman pada ukuran berapa pun yang dibutuhkan oleh klien atau percetakan.</p>
 
-<div class="sumber">Sumber: Buku Teks Dasar-Dasar DKV Kelas X Semester 2, Maylinda Ambarwati &amp; Wi Kurnia Kuwahyuni (2022). Ringkasan sesuai PROMES DDKV.</div>
+<h2>Mode Warna RGB dan CMYK</h2>
+<p>Mode warna RGB adalah singkatan dari Red, Green, dan Blue yang merupakan tiga warna
+dasar cahaya. Mode RGB menggunakan prinsip warna aditif di mana ketiga warna dasar ini
+dicampur dalam berbagai proporsi untuk menghasilkan jutaan warna. Ketika ketiga warna
+ini dicampur dengan intensitas penuh, hasilnya adalah warna putih. Mode RGB digunakan
+untuk semua jenis media digital yang menampilkan warna melalui pancaran cahaya seperti
+monitor komputer, layar smartphone, televisi, dan proyektor. Mode CMYK adalah singkatan
+dari Cyan, Magenta, Yellow, dan Key atau Black yang merupakan empat warna tinta cetak.
+Mode CMYK menggunakan prinsip warna subtraktif di mana tinta menyerap cahaya dan
+menghasilkan warna dari campuran pigmen. Ketika semua warna tinta dicampur, hasilnya
+adalah warna gelap mendekati hitam. Mode CMYK digunakan khusus untuk kebutuhan
+pencetakan seperti brosur, poster, kemasan, dan bahan cetakan lainnya. Penting untuk
+dipahami bahwa beberapa warna yang terlihat terang pada layar RGB mungkin tidak dapat
+direplikasi secara persis pada pencetakan CMYK sehingga desainer harus selalu memeriksa
+mode warna yang sesuai dengan media output sebelum memulai proses desain akhir.</p>
+
+<div class="box-biru">
+<b>Aturan Pemilihan Mode Warna:</b> RGB untuk media digital (layar, web, media sosial).
+CMYK untuk media cetak (poster, brosur, kemasan). Selalu konversi ke CMYK sebelum
+mengirim file ke percetakan untuk memastikan warna konsisten.
+</div>
+
+<div class="sumber">Sumber: Buku Teks Dasar-Dasar DKV Kelas X Semester 2,
+Maylinda Ambarwati &amp; Wi Kurnia Kuwahyuni (2022). Ringkasan sesuai PROMES DDKV.</div>
 </body></html>

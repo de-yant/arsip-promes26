@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <title>Rangkuman Materi DDKV — Pekan 16: Prinsip Kerja Software Vektor dan Bitmap</title>
 <style>
-  body{font-family:Arial,Helvetica,sans-serif;max-width:860px;margin:20px auto;padding:0 16px;color:#1f2937;font-size:14px;line-height:1.6;}
+  body{font-family:Arial,Helvetica,sans-serif;max-width:860px;margin:20px auto;padding:0 16px;color:#1f2937;font-size:14px;line-height:1.7;}
   h1{font-size:18px;color:#1e3a5f;border-bottom:2px solid #1e3a5f;padding-bottom:6px;}
   h2{font-size:15px;color:#334155;margin-top:18px;}
   .meta{background:#f1f5f9;padding:10px 14px;border-radius:6px;margin-bottom:16px;font-size:13px;}
   .meta b{color:#1e3a5f;}
-  ul{margin:4px 0 12px 20px;}
-  li{margin-bottom:4px;}
+  p{margin:8px 0;text-align:justify;}
   .box{background:#fff7ed;border:1px solid #fdba74;border-radius:6px;padding:10px 14px;margin:12px 0;}
+  .box-biru{background:#eff6ff;border:1px solid #93c5fd;border-radius:6px;padding:10px 14px;margin:12px 0;}
   .sumber{font-size:12px;color:#64748b;margin-top:20px;border-top:1px solid #e2e8f0;padding-top:8px;}
 </style>
 </head>
@@ -25,30 +25,79 @@
   <b>Bab:</b> 3 Komputer Grafis
 </div>
 
-<h2>CorelDRAW (Vektor)</h2>
-<ul>
-  <li>Interface: menu bar, toolbox, color palette, property bar, drawing window</li>
-  <li>Tools dasar: pick tool, shape tool, bezier, rectangle, ellipse, text</li>
-  <li>Teknik: membuat objek, coloring, tracing, shaping (weld, trim, intersect)</li>
-  <li>File format: .CDR (native), export ke AI, EPS, SVG, PDF</li>
-</ul>
+<h2>CorelDRAW: Interface dan Tools Dasar</h2>
+<p>CorelDRAW merupakan software desain grafis berbasis vektor yang sangat populer terutama
+di Indonesia dan banyak digunakan oleh desainer grafis profesional serta percetakan.
+Interface CorelDRAW terdiri dari menu bar di bagian atas yang berisi berbagai menu
+fungsi, toolbox di sebelah kiri yang berisi alat-alat desain utama, property bar di
+bagian atas yang berubah sesuai tool yang dipilih, dan color palette di sebelah kanan
+untuk pemilihan warna cepat. Pick tool adalah alat paling dasar yang digunakan untuk
+memilih, memindahkan, memutar, dan mengubah ukuran objek. Shape tool berfungsi untuk
+mengedit bentuk objek vektor dengan memanipulasi node atau titik kontrol pada path.
+Bezier tool digunakan untuk membuat garis lengkung dan kurva yang presisi dengan
+menempatkan titik anchor dan mengatur arah kurva secara manual. Coloring atau pewarnaan
+objek dilakukan melalui fill tool untuk warna isi dan outline tool untuk warna tepi
+objek. Tracing atau pelacakan adalah fitur yang mengubah gambar bitmap menjadi gambar
+vektor secara otomatis. Shaping meliputi operasi weld atau penggabungan objek, trim
+atau pemotongan, dan intersect atau pembuatan objek baru dari area irisan dua objek.</p>
 
-<h2>Adobe Illustrator (Vektor)</h2>
-<ul>
-  <li>Interface: artboard, toolbar, panels, menu</li>
-  <li>Tools: pen tool, shape builder, gradient, mesh, envelope</li>
-  <li>Path editing: anchor point, bezier curve, pathfinder</li>
-</ul>
+<h2>Adobe Illustrator: Artboard, Pen Tool, dan Pathfinder</h2>
+<p>Adobe Illustrator merupakan software desain vektor yang paling banyak digunakan secara
+global oleh desainer grafis profesional di berbagai industri kreatif. Fitur artboard
+pada Illustrator memungkinkan desainer membuat beberapa area kerja dalam satu dokumen
+yang sangat berguna untuk proyek yang membutuhkan beberapa variasi desain seperti
+berbagai ukuran kartu nama atau beberapa halaman brosur. Pen tool adalah alat utama
+Illustrator untuk membuat path vektor dengan presisi tinggi melalui penempatan titik
+anchor dan pengaturan kurva bezier secara manual. Kemampuan menguasai pen tool menjadi
+tolok ukur keahlian seseorang dalam menggunakan Illustrator karena tool ini memberikan
+kontrol penuh terhadap bentuk yang dibuat. Pathfinder adalah panel yang berisi operasi
+boolean untuk menggabungkan, memotong, atau membagi beberapa objek vektor menjadi
+bentuk baru yang lebih kompleks. Fitur live trace pada Illustrator juga memungkinkan
+konversi gambar bitmap menjadi vektor secara otomatis dengan pengaturan sensitivitas
+yang dapat disesuaikan sesuai kebutuhan desainer.</p>
 
-<h2>Adobe Photoshop (Bitmap)</h2>
-<ul>
-  <li>Interface: menu bar, toolbox, layers panel, options bar</li>
-  <li>Tools dasar: marquee, lasso, magic wand, pen tool, brush, eraser</li>
-  <li><b>Layer:</b> konsep dasar, blending mode, opacity</li>
-  <li><b>Selection:</b> cara memilih area gambar</li>
-  <li><b>Adjustment:</b> brightness, contrast, hue/saturation, curves</li>
-  <li><b>Filter:</b> blur, sharpen, noise, artistic</li>
-</ul>
+<div class="box">
+<b>Software Vektor Utama:</b> CorelDRAW — populer di Indonesia, interface intuitif
+untuk pemula dan profesional. Illustrator — standar industri global, fitur paling
+lengkap, integrasi dengan ekosistem Adobe yang luas.
+</div>
 
-<div class="sumber">Sumber: Buku Teks Dasar-Dasar DKV Kelas X Semester 2, Maylinda Ambarwati &amp; Wi Kurnia Kuwahyuni (2022). Ringkasan sesuai PROMES DDKV.</div>
+<h2>Adobe Photoshop: Layer, Selection, dan Brush</h2>
+<p>Adobe Photoshop merupakan software editing dan manipulasi gambar berbasis bitmap paling
+populer di dunia yang digunakan oleh fotografer, ilustrator digital, dan desainer grafis.
+Sistem layer atau lapisan merupakan fitur fundamental Photoshop yang memungkinkan desainer
+bekerja dengan beberapa elemen gambar secara terpisah tanpa mempengaruhi elemen lain.
+Setiap layer dapat diaktifkan, disembunyikan, diubah transparansinya, atau diberi efek
+blending secara independen. Selection atau seleksi adalah teknik untuk memilih area
+tertentu pada gambar agar hanya bagian tersebut yang diedit. Marquee tool membuat
+seleksi berbentuk persegi atau lingkaran. Lasso tool membuat seleksi bebas sesuai
+gerakan mouse. Magic wand tool membuat seleksi berdasarkan kesamaan warna dengan satu
+kali klik pada area warna tertentu. Brush tool adalah alat menggambar utama Photoshop
+yang menyediakan berbagai jenis kuas dengan bentuk, ukuran, dan tekstur yang beragam.
+Adjustment layer memungkinkan penyesuaian warna dan tone seperti brightness, contrast,
+hue, saturation, dan levels dilakukan tanpa mengubah data piksel asli secara permanen.</p>
+
+<h2>Fitur Filter dan Efek Photoshop</h2>
+<p>Photoshop menyediakan berbagai filter dan efek yang dapat digunakan untuk memodifikasi
+tampilan gambar secara kreatif. Filter blur seperti Gaussian blur dan motion blur
+menciptakan efek kabur dengan karakter yang berbeda-beda, Gaussian blur untuk kabur
+merata dan motion blur untuk efek gerakan. Filter sharpen meningkatkan ketajaman detail
+pada gambar yang kurang tajam. Filter noise menambahkan atau mengurangi grain atau
+titik-titik kasar pada gambar sesuai kebutuhan. Filter distort mengubah bentuk
+geometris gambar dengan berbagai efek seperti wave, ripple, atau spherize yang dapat
+disesuaikan tingkatannya. Selain filter, Photoshop juga menawarkan fitur layer style
+yang memungkinkan penambahan efek seperti drop shadow, outer glow, bevel and emboss,
+dan stroke pada objek atau teks secara non-destruktif. Filter gallery memungkinkan
+pratinjau berbagai efek artistik seperti oil paint, pencil sketch, dan watercolor
+sebelum diterapkan pada gambar. Pemahaman mendalam tentang berbagai filter dan efek
+ini memungkinkan desainer menciptakan manipulasi gambar yang kreatif dan profesional.</p>
+
+<div class="box-biru">
+<b>Fitur Unggulan:</b> CorelDRAW — weld, trim, intersect shape shaping. Illustrator
+— pen tool presisi tinggi, pathfinder boolean. Photoshop — layer non-destruktif,
+adjustment layer, beragam filter artistik.
+</div>
+
+<div class="sumber">Sumber: Buku Teks Dasar-Dasar DKV Kelas X Semester 2,
+Maylinda Ambarwati &amp; Wi Kurnia Kuwahyuni (2022). Ringkasan sesuai PROMES DDKV.</div>
 </body></html>
