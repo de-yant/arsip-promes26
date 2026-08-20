@@ -13,6 +13,11 @@
   .box{background:#fff7ed;border:1px solid #fdba74;border-radius:6px;padding:10px 14px;margin:12px 0;}
   .box-biru{background:#eff6ff;border:1px solid #93c5fd;border-radius:6px;padding:10px 14px;margin:12px 0;}
   .sumber{font-size:12px;color:#64748b;margin-top:20px;border-top:1px solid #e2e8f0;padding-top:8px;}
+
+  .back-btn{position:fixed;top:24px;right:24px;z-index:999;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#1e3a5f;color:#fff;border:none;border-radius:50%;font-size:16px;text-decoration:none;box-shadow:0 4px 14px rgb(0 0 0 / .25);transition:background .2s,transform .2s}
+  .back-btn:hover{background:#1e40af;transform:translateY(-2px)}
+  .top-btn{position:fixed;bottom:24px;right:24px;z-index:999;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:#94a3b8;color:#fff;border:none;border-radius:50%;font-size:16px;text-decoration:none;box-shadow:0 4px 14px rgb(0 0 0 / .25);transition:background .2s,transform .2s}
+  .top-btn:hover{background:#64748b;transform:translateY(-2px)}
 </style>
 </head>
 <body>
@@ -94,4 +99,13 @@ mengembangkan kemampuan fotografi di masa depan?
 
 <div class="sumber">Sumber: Buku Teks Dasar-Dasar DKV Kelas X Semester 2,
 Maylinda Ambarwati &amp; Wi Kurnia Kuwahyuni (2022). Ringkasan sesuai PROMES DDKV.</div>
+
+<a class="back-btn" href="../../PROMES_DDKV_Kelas_X_2026_2027.html" title="Kembali ke PROMES">&#8592;</a>
+<a class="top-btn" href="#" title="Kembali ke atas" style="display:none">&#8593;</a>
+<script>
+var topBtn=document.querySelector('.top-btn');
+window.addEventListener('scroll',function(){topBtn.style.display=window.scrollY>200?'flex':'none'});
+topBtn.addEventListener('click',function(e){e.preventDefault();window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+
 </body></html>
